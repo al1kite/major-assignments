@@ -1,1 +1,1 @@
-# major-assignments
+# problem solving
