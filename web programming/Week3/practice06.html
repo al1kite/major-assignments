@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        form {
+            display: flex;
+			align-items: center;
+			justify-content: center; 
+        }
+        table, th, td {
+          border:1px solid #f1eef1; 
+        }
+        thead {
+            text-align: center;
+        }
+        td.leftright {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        td.updown{
+            padding: 15px;
+            background-color: #7bcaf9;
+        }
+        td.text{
+            font-size: 30px;
+            background-color: #7bcaf9;
+        }
+        input.imageAlign { vertical-align:middle; }
+        </style>
+    <title>이클래스 로그인</title>
+    <script>
+        function calc(){
+            var exp = prompt("계산할 수식을 입력하세요.")
+            var result = eval(exp)
+            if (result != null)
+                alert(result)
+        }
+    </script>
+</head>
+<body>
+    <form name = "frm3">
+        <table>
+            <thead>
+                <td colspan="2" class="text"><strong><em>CalCuLaTor</em></strong></td>
+            </thead>
+            <tbody>    
+                <td><img src="./cal.jpg" class="imageAlign" width="100%"></td>
+                <td class="leftright"><input type="reset" value="계산하기" onclick="calc()"></td> 
+            </tbody>
+            <tfoot>
+                <td colspan="2" class="updown"><br></td>
+            </tfoot>
+        </table>
+        </form>
+</body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div, table {
+            display: flex;
+            align-items: center;
+			justify-content: center; 
+        }
+        .blank {
+            background-color: #fdfea7;
+        }
+    </style>
+    <title>이클래스 로그인</title>
+</head>
+<body onLoad="alert('어서 오세요'); frm1.id.focus();">
+    <img src="./eclass_title.jpg" class="imageAlign" width="100%">
+    <br><br>
+    <div>
+        <h1>로그인</h1>
+    </div>
+    <hr>
+    <form>
+        <table name = "frm1">
+            <tr>
+                <td rowspan="5"><input type=image src="./eclass_logo.png" class="imageAlign"></td>
+                <td colspan="2"><strong>회원님의 아이디와 비밀번호를 정확히 입력하세요.</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> 
+                    <select name=phone>
+                    <option value=0 selected>학부생</option>
+                    <option value=1>대학원생</option>
+                    <option value=2>교직원</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>아이디</strong></td>
+                <td><input type="text" name="id" size="15" class="blank" autofocus></td>
+            </tr>
+            <tr>
+                <td><strong>비밀번호</strong></td>
+                <td><input type="text" name="pwd" size="15" class="blank"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="type" value="로그인" onClick="alert('회원이 아니군요')">&nbsp;<input type="reset" name="button" value="가입하기" onclick="document.location='member2.html' "></td>  
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

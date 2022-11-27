@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        form {
+            display: flex;
+			align-items: center;
+			justify-content: center; 
+        }
+        table, th, td {
+          border:1px solid #000000;
+          border-collapse: collapse;
+        }
+        th {font-size: 20px;
+        background-color: #ececec}
+        td, input {font-size: 13px;} 
+        input.imageAlign { vertical-align:middle; }
+        </style>
+    <title>이클래스 로그인</title>
+</head>
+<body>
+    <img src="./eclass_title.jpg" class="imageAlign" width="100%">
+    <br>
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">회원 가입</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>아이디</th>
+                    <td><input type="text" size="15">
+                        <input type=image src="./check.gif" class="imageAlign"></td>
+                </tr>
+                <tr>
+                    <th>패스워드</th>
+                    <td><input type="text" size="14"></td>      
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td>
+                        <input type=radio name=gen value=0>남
+                        <input type=radio name=gen value=1 checked>여
+                    </td>       
+                </tr>
+                <tr>
+                    <th>국적</th>  
+                    <td><input type="text">
+                    <input type="button" value="국적변경">
+                    </td>
+                </tr>
+                <tr>
+                    <th>휴대폰</th>
+                    <td><select name=phone>
+                        <option value=0 selected>010</option>
+                        <option value=1>011</option>
+                        <option value=2>070</option>
+                        <option value=3>080</option>
+                        </select>
+                         - <input type="text" size="5"> - <input type="text" size="5">
+                    </td>   
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td><input type="text" size="50"></td>
+                </tr>
+                <tr>
+                    <th>생일</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>관심분야</th>
+                    <td> <input type=checkbox name=hobby value=0>뉴스
+                         <input type=checkbox name=hobby value=1 checked>맛집
+                         <input type=checkbox name=hobby value=0>책
+                         <input type=checkbox name=hobby value=0>영화
+                         <input type=checkbox name=hobby value=0>여행
+                    </td>  
+                </tr>
+                <tr>
+                    <th>가입인사</th>
+                    <td><textarea id="srcTxt" rows=5; cols=60>회원들에게 간단한 가입인사를 남겨주세요</textarea><br></td>
+                </tr>
+                <tr>
+                    <th>증명사진</th>
+                    <td><input type="button" value="국적변경"> 선택된 파일 없음</td>  
+                </tr>
+                <tr>
+                    <th colspan="2"><input type="reset" value="가입하기" onclick="document.location='member4.html' "><input type="reset" value="다시작성"></th>  
+                </tr>
+            </tbody>
+        </table>
+        </form>
+</body>
