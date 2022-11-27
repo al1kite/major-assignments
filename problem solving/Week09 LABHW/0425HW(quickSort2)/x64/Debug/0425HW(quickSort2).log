@@ -1,0 +1,30 @@
+﻿  0425HW(quickSort2).c
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(57,14): warning C4047: '함수': 'Student *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(57,13): warning C4024: 'swap': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(57,16): warning C4020: 'swap': 실제 매개 변수가 너무 많습니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(61,12): warning C4047: '함수': 'Student *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(61,11): warning C4024: 'swap': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(61,14): warning C4020: 'swap': 실제 매개 변수가 너무 많습니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(67,14): warning C4047: '함수': 'Student *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(67,13): warning C4024: 'swap': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(67,16): warning C4020: 'swap': 실제 매개 변수가 너무 많습니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(71,12): warning C4047: '함수': 'Student *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(71,11): warning C4024: 'swap': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(71,14): warning C4020: 'swap': 실제 매개 변수가 너무 많습니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(77,14): warning C4047: '함수': 'Student *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(77,13): warning C4024: 'swap': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(77,16): warning C4020: 'swap': 실제 매개 변수가 너무 많습니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(81,12): warning C4047: '함수': 'Student *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(81,11): warning C4024: 'swap': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(81,14): warning C4020: 'swap': 실제 매개 변수가 너무 많습니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(87,14): warning C4047: '함수': 'Student *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(87,13): warning C4024: 'swap': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(87,16): warning C4020: 'swap': 실제 매개 변수가 너무 많습니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(91,12): warning C4047: '함수': 'Student *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(91,11): warning C4024: 'swap': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(91,14): warning C4020: 'swap': 실제 매개 변수가 너무 많습니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(51,12): warning C4101: 't' :참조되지 않은 지역 변수입니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(105,22): warning C4028: 정식 매개 변수 2이(가) 선언과 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(106,1): warning C4029: 선언된 정식 매개 변수 목록이 정의와 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort2)\0425HW(quickSort2).c(104): warning C4716: 'quickSort': 값을 반환해야 합니다.
+  0425HW(quickSort2).vcxproj -> D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\x64\Debug\0425HW(quickSort2).exe

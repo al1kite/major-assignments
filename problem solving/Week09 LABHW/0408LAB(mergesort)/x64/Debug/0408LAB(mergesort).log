@@ -1,0 +1,4 @@
+﻿  0408LAB(mergesort).c
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0408LAB(mergesort)\0408LAB(mergesort).c(12,27): warning C4098: 'merge': 'void' 함수에서 값을 반환하고 있습니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0408LAB(mergesort)\0408LAB(mergesort).c(56,12): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  0408LAB(mergesort).vcxproj -> D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\x64\Debug\0408LAB(mergesort).exe

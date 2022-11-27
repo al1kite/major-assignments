@@ -1,0 +1,7 @@
+﻿  Q2.c
+D:\the sophomore major courses\the first semester\Problem Solving\중간고사\Q2\Q2.c(20,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int **'입니다.
+D:\the sophomore major courses\the first semester\Problem Solving\중간고사\Q2\Q2.c(20,9): warning C4313: 'printf': 서식 문자열의 '%d'이(가) int **' 형식의 인수 1과(와) 충돌합니다.
+D:\the sophomore major courses\the first semester\Problem Solving\중간고사\Q2\Q2.c(21,20): warning C4047: '함수': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\중간고사\Q2\Q2.c(21,19): warning C4024: 'reverse': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\중간고사\Q2\Q2.c(21,21): warning C4047: '==': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+  Q2.vcxproj -> D:\the sophomore major courses\the first semester\Problem Solving\중간고사\x64\Debug\Q2.exe

@@ -1,0 +1,4 @@
+﻿  0425HW(quickSort).c
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort)\0425HW(quickSort).c(44,12): warning C4101: 't' :참조되지 않은 지역 변수입니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\0425HW(quickSort)\0425HW(quickSort).c(65): warning C4716: 'quickSort': 값을 반환해야 합니다.
+  0425HW(quickSort).vcxproj -> D:\the sophomore major courses\the first semester\Problem Solving\Week09 LABHW\x64\Debug\0425HW(quickSort).exe

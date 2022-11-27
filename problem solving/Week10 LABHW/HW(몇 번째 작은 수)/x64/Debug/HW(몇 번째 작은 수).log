@@ -1,0 +1,5 @@
+﻿  HW(몇 번째 작은 수).c
+D:\the sophomore major courses\the first semester\Problem Solving\Week10 LABHW\HW(몇 번째 작은 수)\HW(몇 번째 작은 수).c(30,15): warning C4047: '==': 'int'의 간접 참조 수준이 'int (__cdecl *)(int *,int,int,int)'과(와) 다릅니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week10 LABHW\HW(몇 번째 작은 수)\HW(몇 번째 작은 수).c(33,16): warning C4013: 'select'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week10 LABHW\HW(몇 번째 작은 수)\HW(몇 번째 작은 수).c(57,12): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  HW(몇 번째 작은 수).vcxproj -> D:\the sophomore major courses\the first semester\Problem Solving\Week10 LABHW\x64\Debug\HW(몇 번째 작은 수).exe

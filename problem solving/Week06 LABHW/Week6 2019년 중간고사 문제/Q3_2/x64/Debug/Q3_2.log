@@ -1,0 +1,4 @@
+﻿  Q3_2.c
+D:\the sophomore major courses\the first semester\Problem Solving\Week06 LABHW\Week6 2019년 중간고사 문제\Q3_2\Q3_2.c(8,27): warning C4013: 'malloc'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+D:\the sophomore major courses\the first semester\Problem Solving\Week06 LABHW\Week6 2019년 중간고사 문제\Q3_2\Q3_2.c(8,50): warning C4312: '형식 캐스트': 'int'에서 더 큰 'int *'(으)로의 변환입니다.
+  Q3_2.vcxproj -> D:\the sophomore major courses\the first semester\Problem Solving\Week06 LABHW\Week6 2019년 중간고사 문제\x64\Debug\Q3_2.exe
