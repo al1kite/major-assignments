@@ -1,1 +1,1 @@
-# major-assignments
+# major courses assignments
