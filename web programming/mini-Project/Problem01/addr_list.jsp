@@ -7,11 +7,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<style>body {font-family:"굴림"}</style>
 <title>Insert title here</title>
 </head>
 <body>
 <div align=center>
-<h2>주소록</h2>
+<h2>주소록(전체보기)</h2>
 <hr>
 <a href="addr_form.jsp">주소추가</a><p>
 <%
@@ -21,12 +22,10 @@
 	int startIndex;
 	int allpage; 
 	
-	if(request.getParameter("sindex") == null){
+	if(request.getParameter("sindex") == null)
 		currentPage = 1;
-	}
-	else{
+	else
 		currentPage = Integer.parseInt(request.getParameter("sindex"));
-	}
 %>
 <table border=1 width=500>
 <tr>
@@ -34,6 +33,7 @@
 	<td>전화번호</td>
 	<td>이메일</td>
 	<td>성별</td>
+	<td>그룹</td>
 </tr>
 <% 
 	startIndex = (currentPage - 1) * 2;
@@ -50,27 +50,28 @@
 		<td><%= ab.get(i).getTel() %></td>
 		<td><%= ab.get(i).getEmail() %></td>
 		<td><%= ab.get(i).getSex() %></td>
+		<td><%=ab.get(i).getGroup() %></td>
 	</tr>
-<% } 
-	
-	if (ab.size() % 2 == 0)
-		allpage = ab.size() / 2;
-	else
-		allpage = ab.size() / 2 + 1;
-	
-	for(int i = 1; i <= allpage; i++){
-		if(i == currentPage){
-			out.print(i);
-		}
-		else{
-			out.print("<a href=\"addr_list.jsp?sindex="+ i + "\">" + i + "</a>");
-		}
-		if(i != allpage){
-			out.print(" | ");
-		}
-	}
-%>
+<% } %>
 </table>
+<% 	
+if (ab.size() % 2 == 0)
+	allpage = ab.size() / 2;
+else
+	allpage = ab.size() / 2 + 1;
+
+for(int i = 1; i <= allpage; i++){
+	if(i == currentPage){
+		out.print(i);
+	}
+	else{
+		out.print("<a href=\"addr_list.jsp?sindex="+ i + "\">" + i + "</a>");
+	}
+	if(i != allpage){
+		out.print(" | ");
+	}
+}
+%>
 </div>
 </body>
 </html>

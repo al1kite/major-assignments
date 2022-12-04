@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<style>body {font-family:"굴림"}</style>
 <title>Insert title here</title>
 </head>
 <body>
