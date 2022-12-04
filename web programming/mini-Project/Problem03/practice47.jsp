@@ -58,8 +58,12 @@
 <hr>
 <%
 if (Lecture.getType() != -1) {
+	if (LectureM.getTitleMatrix()[Lecture.getTime()-1][Lecture.getDay()] == -1 && LectureM.getSpanMatrix()[Lecture.getTime()-1][Lecture.getDay()] == 1){
 	LectureM.add(Lecture);
 	LectureM.buildMatrix();
+	} else {
+		out.println("<script>alert('해당 시간에는 다른 강의가 있습니다. 다시 선택해주세요.')</script>");
+	}
 %>
 	<jsp:include page="timeTable.jsp" />
 <br>
