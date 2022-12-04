@@ -1,1 +1,1 @@
-# major courses assignments
+# web programming using JSP
