@@ -52,14 +52,19 @@
  				out.println("<option value="+i+">"+i+"</option>"); 
  			}
  		%>
+	&nbsp;&nbsp;
 	<input type="submit" value="등록">
 </form>
+<hr>
 <%
 if (Lecture.getType() != -1) {
 	LectureM.add(Lecture);
 	LectureM.buildMatrix();
 %>
 	<jsp:include page="timeTable.jsp" />
+<br>
+<hr>
+<br>
 <% 
 		for (LectureBean lb : LectureM.getLectureList()) {
 	out.println(LectureBean.typeNames[lb.getType()] + "/");

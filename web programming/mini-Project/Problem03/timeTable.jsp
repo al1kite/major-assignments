@@ -20,36 +20,38 @@
 <meta charset="UTF-8">
 <title>Practice31</title>
   <style>
-        body {
-            display: flex;
-			align-items: center;
-			justify-content: center;
-        }
-        table, th, td {
-          border:1px solid #000000;
-          border-collapse: collapse;
-        }
-        th,td,caption { padding:10px 5px;}
-        th {font-size: 20px;
-        text-align: center;}
-        td {font-size: 13px;
-            text-align: center;}
-        .type0 {
-            background-color: #f5e198;
-        }
-        
-        .type1 {
-            background-color: #bcccfa; 
-        }
-        
-        .type2 { 
-            background-color: #bdbdbd;
-        }
+	body{
+	font-family:"굴림";
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+	td, th {
+	width:90px;
+	height:50px;
+    text-align:center;
+    }
+    table, th, td {
+    border:1px solid #000000;
+    border-collapse: collapse;
+    }        
+    th {font-size: 20px;}     
+    td {font-size: 13.5px;}
+    .color0 {
+    background-color: #f5e198;
+    }   
+    .color1 {
+    background-color: #bcccfa; 
+    }       
+    .color2 { 
+    background-color: #bdbdbd;
+    }
     </style>
 </head>
 <body>
-<div align=center><h3>강의 시간표</h3>
-   <table>
+<div align=center>
+<h3>강의 시간표</h3>
+   <table >
         <thead>
             <tr>
                 <th>2학년</th>
@@ -63,15 +65,14 @@
 <%
 	for(int i = 0; i < 6 ; i++) {
 		out.println("<tr>");
-		out.println("<td>" + (i + 1) + "</td>");
+		out.println("<th>" + (i + 1) + "</th>");
 		for(int j = 0; j < 5; j++) {
 			if (consecutive[i][j] == 0)
 				continue;
-			else if(lectureTitle[i][j] == -1) {
-				out.println("<td></td>");
-			}
+			else if(lectureTitle[i][j] == -1) 
+				out.println("<td> &nbsp </td>");
 			else {
-				out.print("<td rowspan='" + consecutive[i][j] + "' class='type" + lectureType[i][j] + "'>");
+				out.print("<td rowspan='" + consecutive[i][j] + "' class='color" + lectureType[i][j] + "'>");
 				out.print(titleNames[lectureTitle[i][j]]);
 				out.print("</td>");
 			}
@@ -79,7 +80,7 @@
 		out.println("</tr>");
 	}
 %> 
-        </table>
-        </div>
+	</table>
+</div>
 </body>
 </html>
