@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"  import="jspbook.ch11.*" import="java.util.*" %>
     <%@ taglib tagdir="/WEB-INF/tags" prefix="ddwutag" %>
 <jsp:useBean id="am" class="jspbook.ch11.AddrManager" scope="application"/>
-<jsp:useBean id="ag" class="jspbook.ch11.AddrManager" scope="application"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,17 +23,17 @@
 			</tr>
 			<%
 			List<AddrBean> group = new ArrayList<AddrBean>(); 
+			for(AddrBean ab : am.getAddrList()) 
+				if(ab.getGroup().equals("가족")) 	
+					group.add(ab);
+			for(AddrBean ab : am.getAddrList()) 
+				if(ab.getGroup().equals("친구")) 	
+					group.add(ab);
+			for(AddrBean ab : am.getAddrList()) 
+				if(ab.getGroup().equals("직장")) 	
+					group.add(ab);
 			
-				for(AddrBean ab : am.getAddrList()) 
-					if(ab.getGroup().equals("가족")) 	
-						group.add(ab);
-				for(AddrBean ab : am.getAddrList()) 
-					if(ab.getGroup().equals("친구")) 	
-						group.add(ab);
-				for(AddrBean ab : am.getAddrList()) 
-					if(ab.getGroup().equals("직장")) 	
-						group.add(ab);
-				pageContext.setAttribute("group",group);
+			pageContext.setAttribute("group",group);
 			%>
 			<ddwutag:addrList list="${group }" page = "_group"/>
 		</table>

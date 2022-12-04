@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %> 
 <%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.time.LocalDate" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,29 +19,26 @@
 	}
 	td{
 	padding: 10px;
+	width:70px;
+	height:20px;
     text-align:center;
-    }
-	
-    .red{color:red;}
-    .blue{color:blue;}
+    }	
     .line {  border:1px solid #000000;
      border-collapse: collapse;}
+     .color1{color:red;}
+     .color7{color:blue;}
 </style>
-<%! 
-		Calendar cal;
-%>
-<% 
-		cal = Calendar.getInstance();
-%>
 <title>Insert title here</title>
 </head>
 <body>
 <form>
 <% 
-		Calendar today = Calendar.getInstance();
+		Calendar cal = Calendar.getInstance();
+		LocalDate todaysDate = LocalDate.now();
 			
 		String sYear = request.getParameter("YEAR");
 		String sMonth = request.getParameter("MONTH");
+		
 		int year = cal.get(Calendar.YEAR);
 		int month = cal.get(Calendar.MONTH)+1;
 				
@@ -48,36 +46,36 @@
 			year = Integer.parseInt(sYear);
 			month = Integer.parseInt(sMonth);
 		}
+		cal.set(year, month-1, 1); 
 
 		int date = cal.get(Calendar.DATE);
 		int day = cal.get(Calendar.DAY_OF_WEEK);
 				
 		int start = cal.getMinimum(Calendar.DATE);
 		int end = cal.getActualMaximum(Calendar.DAY_OF_MONTH); 
-				
-		cal.set(year, month-1, 1); 
 				  
 		int startDay = cal.get(Calendar.DAY_OF_WEEK); 
 		
-		out.print("<table width='650'><tr><td style='text-align:left'><a href = \"calendar.jsp?YEAR=" + (year-1)+ "&MONTH=" + month + "\">" + "◀</a> " );
+		out.println("<table width='650'><tr><td style='text-align:left'>");
+		out.print("<a href = \"calendar.jsp?YEAR=" + (year-1)+ "&MONTH=" + month + "\">" + "◀</a> " );
 		out.print(year + "년 ");
 		out.print("<a href = \"calendar.jsp?YEAR=" + (year+1) + "&MONTH=" + month + "\">" +  "▶</a></td>" );
 		
-		if(month != 1){
+		if(month > 1){
 			out.print("<td><a href = \"calendar.jsp?YEAR=" + year + "&MONTH=" + (month-1) + "\">" +  "◀</a> " );
 		}else { out.print("<td>◀ "); } 
 			out.print(month + "월 ");
-		if(month != 12){
+		if(month < 12){
 			out.print("<a href = \"calendar.jsp?YEAR=" + year + "&MONTH=" + (month+1) + "\">" +  "▶</a></td>" );
 		} else { out.print(" ▶</td>"); }
 				
 %>
-<td style="text-align:right"><%= year +"-" + month + "-" + date%></td></tr>
+<td style="text-align:right"><% out.println(todaysDate);%></td></tr>
 </table>
 
 <table border = "3" class="line" >
 <tr>
-	<td class="red"><% out.write(yoil[0]);%></td>
+	<td class="color1"><% out.write(yoil[0]);%></td>
 <%
 	for(int i =1; i<6; i++){
 %>
@@ -85,43 +83,22 @@
 <% 
 	}
 %>
-	<td class="blue"><% out.write(yoil[6]);%> </td>
+	<td class="color7"><% out.write(yoil[6]);%> </td>
 </tr>
 <% 
 	int cnt = 1; 
-	for(int i=0; cnt < end; i++){
+	for(int i=0; cnt <= end; i++){
 
 %>
 <tr>
 	<% 
 			for(int j=1; j<8; j++){ 
-				if (0 < i* 7 + j && i * 7 + j < startDay || cnt > end){
-					out.println("<td>");
-					out.write(" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
-					out.println("</td>");}
+				if (i * 7 + j < startDay  || cnt > end)
+					out.println("<td></td>");
 				else {
-						 
-					if(j == 1){
-						out.println("<td class='red'>");
-						out.write("&nbsp;&nbsp;&nbsp;");
+						out.println("<td class='color"+j+"'>");
 						out.println((int)cnt++);
-						out.write("&nbsp;&nbsp;&nbsp;");
 						out.println("</td>");
-					}
-					else if (j==7){
-						out.println("<td class='blue'>");
-						out.write("&nbsp;&nbsp;&nbsp;");
-						out.println((int)cnt++);
-						out.write("&nbsp;&nbsp;&nbsp;");
-						out.println("</td>");
-					}
-					else{
-						out.println("<td>");
-						out.write("&nbsp;&nbsp;&nbsp;");
-						 out.println((int)cnt++);
-						out.write("&nbsp;&nbsp;&nbsp;");
-						out.println("</td>");
-					}
 				}
 	}%>
 </tr>

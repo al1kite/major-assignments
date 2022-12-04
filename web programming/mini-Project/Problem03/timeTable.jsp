@@ -70,7 +70,7 @@
 			if (consecutive[i][j] == 0)
 				continue;
 			else if(lectureTitle[i][j] == -1) 
-				out.println("<td> &nbsp </td>");
+				out.println("<td></td>");
 			else {
 				out.print("<td rowspan='" + consecutive[i][j] + "' class='color" + lectureType[i][j] + "'>");
 				out.print(titleNames[lectureTitle[i][j]]);

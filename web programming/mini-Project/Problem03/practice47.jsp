@@ -17,7 +17,7 @@
 	과목타입:<select name=type> 
 	<%
  	for (int i = 0; i < LectureBean.typeNames.length; i++) {
- 			out.println("<option value="+i+" name=type>"+LectureBean.typeNames[i]+"</option>"); 
+ 			out.println("<option value="+i+">"+LectureBean.typeNames[i]+"</option>"); 
  		}
  	%>
 	</select> 
@@ -52,13 +52,13 @@
  				out.println("<option value="+i+">"+i+"</option>"); 
  			}
  		%>
-	&nbsp;&nbsp;
 	<input type="submit" value="등록">
 </form>
 <hr>
 <%
 if (Lecture.getType() != -1) {
-	if (LectureM.getTitleMatrix()[Lecture.getTime()-1][Lecture.getDay()] == -1 && LectureM.getSpanMatrix()[Lecture.getTime()-1][Lecture.getDay()] == 1){
+	if (LectureM.getTitleMatrix()[Lecture.getTime()-1][Lecture.getDay()] == -1 && 
+			LectureM.getSpanMatrix()[Lecture.getTime()-1][Lecture.getDay()] == 1){
 	LectureM.add(Lecture);
 	LectureM.buildMatrix();
 	} else {
