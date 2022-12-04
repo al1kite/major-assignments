@@ -20,6 +20,7 @@
 성별 : <%=addr.getSex() %>
 <hr>
 <a href="addr_list.jsp">목록보기</a>
+<a href="addr_list_group.jsp">그룹별 보기</a>
 </div>
 </body>
 </html>
