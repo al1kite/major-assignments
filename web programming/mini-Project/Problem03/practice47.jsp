@@ -56,13 +56,21 @@
 </form>
 <hr>
 <%
+int lecture = 0;
 if (Lecture.getType() != -1) {
-	if (LectureM.getTitleMatrix()[Lecture.getTime()-1][Lecture.getDay()] == -1 && 
-			LectureM.getSpanMatrix()[Lecture.getTime()-1][Lecture.getDay()] == 1){
-	LectureM.add(Lecture);
-	LectureM.buildMatrix();
-	} else {
+	if(LectureM.getTitleMatrix()[Lecture.getTime()-1][Lecture.getDay()] != -1)
+		lecture = 1;
+	else {
+		for(int i=0; i < Lecture.getConsecutive(); i++)
+			if(LectureM.getSpanMatrix()[Lecture.getTime()-1+i][Lecture.getDay()] != 1)
+				lecture = 1;
+	}
+	if (lecture == 1){
 		out.println("<script>alert('해당 시간에는 다른 강의가 있습니다. 다시 선택해주세요.')</script>");
+	
+	} else {
+		LectureM.add(Lecture);
+		LectureM.buildMatrix();
 	}
 %>
 	<jsp:include page="timeTable.jsp" />

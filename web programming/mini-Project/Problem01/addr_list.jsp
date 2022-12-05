@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <style>body {font-family:"굴림"}</style>
-<title>Insert title here</title>
+<title>주소록(전체보기)</title>
 </head>
 <body>
 <div align=center>

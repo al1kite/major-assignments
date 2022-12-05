@@ -8,21 +8,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div aligh = "center">
+<div align = "center">
 <hr>
 <form name=addr method="post" action=addr_add.jsp>
 <table border=1 cellspacing="1" cellpadding="5">
 <tr>
 <td>이름</td>
-<td><input type=text size=20 name=username></td>
+<td><input type=text size=20 name=username autoComplete="off"></td>
 </tr>
 <tr>
 <td>전화번호</td>
-<td><input type=text size=20 name=tel></td>
+<td><input type=text size=20 name=tel autoComplete="off"></td>
 </tr>
 <tr>
 <td>이메일</td>
-<td><input type=text size=20 name=email></td>
+<td><input type=text size=20 name=email autoComplete="off"></td>
 </tr>
 <tr>
 <td>성별</td>

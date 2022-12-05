@@ -6,13 +6,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<style>body {font-family:"굴림"}</style>
+<title>주소록(그룹보기)</title>
 </head>
 <body>
 	<div align=center>
-		<h2>주소록</h2>
+		<h2>주소록(그룹보기)</h2>
 		<hr>
-		<a href="addr_form.jsp">주소추가</a><P>
+		<a href="addr_form.jsp">주소추가</a><p>
 		<table border=1 width=500>
 			<tr>
 				<td>이름</td>
