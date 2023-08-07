@@ -1,4 +1,4 @@
-# 전공 수업 과제
+# 전공 수업 및 과제
 ![image](https://user-images.githubusercontent.com/102217402/210731774-f536b231-8e19-46f7-bab7-96376c5e32be.png)
 |주요 분야| 기술역량
 |---|:---:|
